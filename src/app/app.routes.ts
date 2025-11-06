@@ -20,105 +20,105 @@ import { SignUpComponent } from './pages/auth-pages/sign-up/sign-up.component';
 import { CalenderComponent } from './pages/calender/calender.component';
 
 export const routes: Routes = [
-  {
-    path:'',
-    component:AppLayoutComponent,
-    children:[
-      {
-        path: '',
-        component: EcommerceComponent,
-        pathMatch: 'full',
-        title:
-          'Angular Ecommerce Dashboard | TailAdmin - Angular Admin Dashboard Template',
-      },
-      {
-        path:'calendar',
-        component:CalenderComponent,
-        title:'Angular Calender | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'profile',
-        component:ProfileComponent,
-        title:'Angular Profile Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'form-elements',
-        component:FormElementsComponent,
-        title:'Angular Form Elements Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'basic-tables',
-        component:BasicTablesComponent,
-        title:'Angular Basic Tables Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'blank',
-        component:BlankComponent,
-        title:'Angular Blank Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      // support tickets
-      {
-        path:'invoice',
-        component:InvoicesComponent,
-        title:'Angular Invoice Details Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'line-chart',
-        component:LineChartComponent,
-        title:'Angular Line Chart Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'bar-chart',
-        component:BarChartComponent,
-        title:'Angular Bar Chart Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'alerts',
-        component:AlertsComponent,
-        title:'Angular Alerts Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'avatars',
-        component:AvatarElementComponent,
-        title:'Angular Avatars Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'badge',
-        component:BadgesComponent,
-        title:'Angular Badges Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'buttons',
-        component:ButtonsComponent,
-        title:'Angular Buttons Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'images',
-        component:ImagesComponent,
-        title:'Angular Images Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-      {
-        path:'videos',
-        component:VideosComponent,
-        title:'Angular Videos Dashboard | TailAdmin - Angular Admin Dashboard Template'
-      },
-    ]
-  },
-  // auth pages
-  {
-    path:'signin',
-    component:SignInComponent,
-    title:'Angular Sign In Dashboard | TailAdmin - Angular Admin Dashboard Template'
-  },
-  {
-    path:'signup',
-    component:SignUpComponent,
-    title:'Angular Sign Up Dashboard | TailAdmin - Angular Admin Dashboard Template'
-  },
-  // error pages
-  {
-    path:'**',
-    component:NotFoundComponent,
-    title:'Angular NotFound Dashboard | TailAdmin - Angular Admin Dashboard Template'
-  },
+  {
+    path:'',
+    component:AppLayoutComponent,
+    children:[
+      {
+        path: '',
+        component: EcommerceComponent,
+        pathMatch: 'full',
+        title:
+          'Hortifruti | Painel Principal', // Deixei como Painel Principal/Ecommerce
+      },
+      {
+        path:'calendar',
+        component:CalenderComponent,
+        title:'Calendário do Hortifruti' // Mantido
+      },
+      {
+        path:'profile',
+        component:ProfileComponent,
+        title:'Perfil do Usuário | Hortifruti' // Alterado
+      },
+      {
+        path:'form-elements',
+        component:FormElementsComponent,
+        title:'Cadastro e Formulários | Hortifruti' // Sugestão
+      },
+      {
+        path:'basic-tables',
+        component:BasicTablesComponent,
+        title:'Tabelas de Produtos | Hortifruti' // Sugestão
+      },
+      {
+        path:'blank',
+        component:BlankComponent,
+        title:'Página em Branco | Hortifruti' // Sugestão
+      },
+      // support tickets
+      {
+        path:'invoice',
+        component:InvoicesComponent,
+        title:'Detalhes da Nota Fiscal | Hortifruti' // Sugestão
+      },
+      {
+        path:'line-chart',
+        component:LineChartComponent,
+        title:'Gráfico de Linha | Vendas Hortifruti' // Sugestão
+      },
+      {
+        path:'bar-chart',
+        component:BarChartComponent,
+        title:'Gráfico de Barras | Estoque Hortifruti' // Sugestão
+      },
+      {
+        path:'alerts',
+        component:AlertsComponent,
+        title:'Alertas e Notificações | Hortifruti' // Sugestão
+      },
+      {
+        path:'avatars',
+        component:AvatarElementComponent,
+        title:'Avatares de Usuário | Hortifruti' // Sugestão
+      },
+      {
+        path:'badge',
+        component:BadgesComponent,
+        title:'Badges e Etiquetas | Hortifruti' // Sugestão
+      },
+      {
+        path:'buttons',
+        component:ButtonsComponent,
+        title:'Botões de Ação | Hortifruti' // Sugestão
+      },
+      {
+        path:'images',
+        component:ImagesComponent,
+        title:'Imagens de Produtos | Hortifruti' // Sugestão
+      },
+      {
+        path:'videos',
+        component:VideosComponent,
+        title:'Vídeos Promocionais | Hortifruti' // Sugestão
+      },
+    ]
+  },
+  // auth pages
+  {
+    path:'signin',
+    component:SignInComponent,
+    title:'Login | Acesso ao Hortifruti' // Sugestão
+  },
+  {
+    path:'signup',
+    component:SignUpComponent,
+    title:'Registro | Novo Usuário Hortifruti' // Sugestão
+  },
+  // error pages
+  {
+    path:'**',
+    component:NotFoundComponent,
+    title:'Página Não Encontrada | Erro 404' // Sugestão
+  },
 ];
