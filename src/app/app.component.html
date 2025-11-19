@@ -1,0 +1,32 @@
+
+<div class="app-container" style="display: flex; height: 100vh;">
+
+  <!-- MENU LATERAL -->
+  <aside style="width: 250px; background-color: #2e7d32; color: white; padding: 20px;">
+    <h2 style="text-align: center;">🍏 Hortifruti</h2>
+    <nav>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin: 15px 0;"><a routerLink="/dashboard" style="color: white; text-decoration: none;"> Início</a></li>
+        <li style="margin: 15px 0;"><a routerLink="/frutas" style="color: white; text-decoration: none;"> Frutas</a></li>
+        <li style="margin: 15px 0;"><a routerLink="/categorias" style="color: white; text-decoration: none;">Categorias</a></li>
+        <li style="margin: 15px 0;"><a routerLink="/estoque" style="color: white; text-decoration: none;">Estoque</a></li>
+        <li style="margin: 15px 0;"><a routerLink="/fornecedores" style="color: white; text-decoration: none;">Fornecedores</a></li>
+        <li style="margin: 15px 0;"><a routerLink="/usuarios" style="color: white; text-decoration: none;"> Usuários</a></li>
+        <li style="margin: 15px 0;"><a routerLink="/login" style="color: white; text-decoration: none;"> Login</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main style="flex: 1; background-color: #f8f9fa;">
+    <!-- CABEÇALHO -->
+    <header style="background-color: white; padding: 15px 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h1 style="margin: 0; color: #2e7d32;">Painel de Gerenciamento</h1>
+    </header>
+
+    <!-- CONTEÚDO DINÂMICO -->
+    <section style="padding: 30px;">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>

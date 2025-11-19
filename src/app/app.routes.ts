@@ -3,12 +3,9 @@ import { EcommerceComponent } from './pages/dashboard/ecommerce/ecommerce.compon
 import { ProfileComponent } from './pages/profile/profile.component';
 import { FormElementsComponent } from './pages/forms/form-elements/form-elements.component';
 import { BasicTablesComponent } from './pages/tables/basic-tables/basic-tables.component';
-import { BlankComponent } from './pages/blank/blank.component';
 import { NotFoundComponent } from './pages/other-page/not-found/not-found.component';
 import { AppLayoutComponent } from './shared/layout/app-layout/app-layout.component';
 import { InvoicesComponent } from './pages/invoices/invoices.component';
-import { LineChartComponent } from './pages/charts/line-chart/line-chart.component';
-import { BarChartComponent } from './pages/charts/bar-chart/bar-chart.component';
 import { AlertsComponent } from './pages/ui-elements/alerts/alerts.component';
 import { AvatarElementComponent } from './pages/ui-elements/avatar-element/avatar-element.component';
 import { BadgesComponent } from './pages/ui-elements/badges/badges.component';
@@ -17,7 +14,7 @@ import { ImagesComponent } from './pages/ui-elements/images/images.component';
 import { VideosComponent } from './pages/ui-elements/videos/videos.component';
 import { SignInComponent } from './pages/auth-pages/sign-in/sign-in.component';
 import { SignUpComponent } from './pages/auth-pages/sign-up/sign-up.component';
-import { CalenderComponent } from './pages/calender/calender.component';
+
 
 export const routes: Routes = [
   {
@@ -29,49 +26,33 @@ export const routes: Routes = [
         component: EcommerceComponent,
         pathMatch: 'full',
         title:
-          'Hortifruti | Painel Principal', // Deixei como Painel Principal/Ecommerce
+          'Hortifruti | Painel Principal', // Painel Principal/Ecommerce
       },
-      {
-        path:'calendar',
-        component:CalenderComponent,
-        title:'Calendário do Hortifruti' // Mantido
-      },
+      
       {
         path:'profile',
         component:ProfileComponent,
-        title:'Perfil do Usuário | Hortifruti' // Alterado
+        title:'Perfil do Usuário | Hortifruti'
       },
       {
         path:'form-elements',
         component:FormElementsComponent,
-        title:'Cadastro e Formulários | Hortifruti' // Sugestão
+        title:'Cadastro e Formulários | Hortifruti' 
       },
       {
         path:'basic-tables',
         component:BasicTablesComponent,
-        title:'Tabelas de Produtos | Hortifruti' // Sugestão
+        title:'Tabelas de Produtos | Hortifruti'
       },
-      {
-        path:'blank',
-        component:BlankComponent,
-        title:'Página em Branco | Hortifruti' // Sugestão
-      },
-      // support tickets
+     
+    
       {
         path:'invoice',
         component:InvoicesComponent,
         title:'Detalhes da Nota Fiscal | Hortifruti' // Sugestão
       },
-      {
-        path:'line-chart',
-        component:LineChartComponent,
-        title:'Gráfico de Linha | Vendas Hortifruti' // Sugestão
-      },
-      {
-        path:'bar-chart',
-        component:BarChartComponent,
-        title:'Gráfico de Barras | Estoque Hortifruti' // Sugestão
-      },
+      
+      
       {
         path:'alerts',
         component:AlertsComponent,

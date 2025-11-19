@@ -18,4 +18,4 @@ import { RecentOrdersComponent } from '../../../shared/components/ecommerce/rece
   ],
   templateUrl: './ecommerce.component.html',
 })
-export class EcommerceComponent {}
+export class EcommerceComponent {}
